@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <title>Form</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Dojo Survey</h1>
+            <!-- Define a form with the action "/result" and the method "post" -->
+            <form action="/result" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <!-- Define a text input with the id "name", the name "name", and the "required" attribute -->
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        required
+                    />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <!-- Define an email input with the id "email", the name "email", and the "required" attribute -->
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        required
+                    />
+                </div>
+                <div class="mb-3">
+                    <label>Gender</label><br />
+                    <div class="form-check">
+                        <!-- Define a radio button input with the name "gender", the id "male", the value "male", and the "required" attribute -->
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="gender"
+                            id="male"
+                            value="male"
+                            required
+                        />
+                        <label class="form-check-label" for="male">Male</label>
+                    </div>
+                    <div class="form-check">
+                        <!-- Define a radio button input with the name "gender", the id "female", the value "female" -->
+                        <input
+                            class="form-check-input"
+                            type="radio"
+                            name="gender"
+                            id="female"
+                            value="female"
+                        />
+                        <label class="form-check-label" for="female"
+                            >Female</label
+                        >
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label>Interests</label><br />
+                    <div class="form-check">
+                        <!-- Define a checkbox input with the name "interests", the id "coding", the value "coding" -->
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="interests"
+                            id="coding"
+                            value="coding"
+                        />
+                        <label class="form-check-label" for="coding"
+                            >Coding</label
+                        >
+                    </div>
+                    <div class="form-check">
+                        <!-- Define a checkbox input with the name "interests", the id "music", the value "music" -->
+                        <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="interests"
+                            id="music"
+                            value="music"
+                        />
+                        <label class="form-check-label" for="music"
+                            >Music</label
+                        >
+                    </div>
+                </div>
+                <!-- Define a submit button with the class "btn btn-primary" -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
